@@ -1,0 +1,18 @@
+#navprimary {
+  display: flex;
+  justify-content: space-between;
+  /* margin-inline: 32px; */
+  margin-block: 26px;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+#navsecondary {
+  padding-block: 14px;
+  /* margin-inline: 32px; */
+  display: flex;
+  justify-content: space-between;
+  border-block: 1px solid var(--stroke-color);
+}
