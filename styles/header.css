@@ -3,6 +3,7 @@
   justify-content: space-between;
   /* margin-inline: 32px; */
   margin-block: 26px;
+  align-items: center;
   div {
     display: flex;
     align-items: center;

@@ -1,0 +1,67 @@
+.flexbt {
+  /* border: solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  b p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+.weekly {
+  /* border: solid; */
+  width: 1216px;
+  height: 314px;
+}
+#cardweekly {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* border: solid; */
+  margin-block: 24px;
+  width: 1216px;
+  height: 234px;
+  gap: 16px;
+}
+.weekly-feature {
+  display: grid;
+  width: 292px;
+  height: 234px;
+  gap: 8px;
+  img {
+    max-width: 292px;
+    max-height: 160px;
+    /* border: solid;      */
+  }
+  .tag {
+    position: absolute;
+    margin: 8px;
+  }
+}
+.card2 {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  /* &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    pointer-events: none;
+  } */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 0%, #020617 350%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
