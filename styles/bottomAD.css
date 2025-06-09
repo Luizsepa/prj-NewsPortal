@@ -1,0 +1,51 @@
+#bottom {
+  display: flex;
+  gap: 32px;
+}
+#ad-aside {
+  /* border: solid; */
+  display: grid;
+  gap: 32px;
+  grid-template-rows: repeat(2, 1fr);
+  width: 488px;
+  height: 856px;
+}
+#lookthis {
+  display: grid;
+  width: 488px;
+  height: 544px;
+  gap: 24px;
+  height: 100%;
+  figure {
+    /* border: solid; */
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 15px;
+    width: 488px;
+    max-height: 72px;
+    overflow: hidden;
+    height: 100%;
+    .info {
+      .tag {
+        margin-bottom: 8px;
+      }
+    }
+    img {
+      width: 72px;
+      height: 72px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--stroke-color);
+    padding-top: 12px;
+    p {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
